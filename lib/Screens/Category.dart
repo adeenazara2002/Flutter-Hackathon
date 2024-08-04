@@ -755,6 +755,8 @@ class _CategoryState extends State<Category> {
 
             // bottom navigation
 
+            SizedBox(height: 42,),
+
             BottomNavigationBar(
               items: const <BottomNavigationBarItem>[
                 BottomNavigationBarItem(
