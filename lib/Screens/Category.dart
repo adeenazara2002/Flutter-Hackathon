@@ -54,24 +54,23 @@ class _CategoryState extends State<Category> {
 
             // ======== PURPLE CONTAINER ========
 
-            Column(children: [
-              Row(
-                children: [
-                  Padding(padding: EdgeInsets.only(left: 20)),
-                  Container(
-                    height: 150,
-                    width: 360,
-                    decoration: BoxDecoration(
-                      color: Color.fromRGBO(170, 20, 240, 1),
-                      borderRadius: BorderRadius.circular(30),
-                      border: Border.all(
-                        color: Color.fromRGBO(170, 20, 240, 1),
-                      ),
+            Column(
+              children: [
+                Stack(
+                  children: [
+                    Container(
+                      width: 360,
+                      height: 150,
+                      decoration: BoxDecoration(
+                          color: Color.fromRGBO(170, 20, 240, 1),
+                          borderRadius: BorderRadius.circular(20)),
                     ),
-                    child: Column(
-                      // crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Column(
+                    Positioned(
+                      top: 10,
+                      left: 10,
+                      child: Container(
+                        //  child: Image.asset("assets/images/Frame.jpg"),
+                        child: Column(
                           children: [
                             Row(
                               children: [
@@ -91,8 +90,8 @@ class _CategoryState extends State<Category> {
                               children: [
                                 Padding(
                                     padding: EdgeInsets.only(
-                                  left: 30,
-                                )),
+                                        // left: 10,
+                                        )),
                                 Text(
                                   'Men Shoe',
                                   style: TextStyle(
@@ -119,39 +118,49 @@ class _CategoryState extends State<Category> {
                             ),
                           ],
                         ),
-                      ],
+                      ),
                     ),
-                  ),
-                ],
-              ),
-            ]),
-
+                    Positioned(
+                      left: 150,
+                      top: 1,
+                      bottom: 1,
+                      child: Container(
+                        height: 200,
+                        width: 200,
+                        // padding: EdgeInsets.only(),
+                        child: Image.asset("assets/images/shoe.png"),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
 
             // bottom navigation
 
-            BottomNavigationBar(
-              items: const <BottomNavigationBarItem>[
-                BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.home,
-                    color: Color.fromRGBO(170, 20, 240, 1),
-                    size: 30,
-                  ),
-                  label: '',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.favorite_outline_outlined),
-                  label: '',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.shopping_cart_outlined),
-                  label: '',
-                ),
-              ],
-              // currentIndex: _selectedIndex,
-              // selectedItemColor: Colors.amber[800],
-              // onTap: _onItemTapped,
-            ),
+            // BottomNavigationBar(
+            //   items: const <BottomNavigationBarItem>[
+            //     BottomNavigationBarItem(
+            //       icon: Icon(
+            //         Icons.home,
+            //         color: Color.fromRGBO(170, 20, 240, 1),
+            //         size: 30,
+            //       ),
+            //       label: '',
+            //     ),
+            //     BottomNavigationBarItem(
+            //       icon: Icon(Icons.favorite_outline_outlined),
+            //       label: '',
+            //     ),
+            //     BottomNavigationBarItem(
+            //       icon: Icon(Icons.shopping_cart_outlined),
+            //       label: '',
+            //     ),
+            //   ],
+            //   // currentIndex: _selectedIndex,
+            //   // selectedItemColor: Colors.amber[800],
+            //   // onTap: _onItemTapped,
+            // ),
           ]),
         )),
       ),
