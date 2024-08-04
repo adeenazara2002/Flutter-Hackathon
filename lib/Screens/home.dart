@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:hackathon/Screens/Category.dart';
+
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -149,12 +151,30 @@ class _HomeState extends State<Home> {
 
                     Padding(padding: EdgeInsets.only(left: 230)),
 
-                    Text(
-                      'See All',
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 14,
-                          color: Color.fromRGBO(54, 52, 49, 1)),
+                    // Text(
+                    //   'See All',
+                    //   style: TextStyle(
+                    //       fontWeight: FontWeight.w500,
+                    //       fontSize: 14,
+                    //       color: Color.fromRGBO(54, 52, 49, 1)),
+                    // ),
+
+                     GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Category(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'See All',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            color: Color.fromRGBO(54, 52, 49, 1)),
+                      ),
                     ),
                   ],
                 ),
