@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hackathon/Screens/Category.dart';
 import 'package:hackathon/Screens/home.dart';
 import 'package:hackathon/Screens/login.dart';
+import 'package:hackathon/Screens/popular_product_screen.dart';
 import 'package:hackathon/Screens/registration.dart';
 
 void main(){
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Category(),
+      home: PopularProduct(),
     );
   }
 }
