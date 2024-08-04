@@ -87,14 +87,53 @@ class _CartState extends State<Cart> {
                                 ),
                                 Padding(
                                     padding: EdgeInsets.only(
-                                  left: 80,
+                                  left: 100,
                                 )),
                                 Icon(
                                   Icons.add,
                                   color: Color.fromRGBO(54, 52, 49, 1),
                                   size: 20,
                                 ),
-                                Image(image: AssetImage('assets/images/'))
+                                // Image(image: AssetImage('assets/images/'))
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Padding(
+                                    padding: EdgeInsets.only(
+                                  left: 20,
+                                )),
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromRGBO(255, 176, 1, 1),
+                                  size: 20,
+                                ),
+                                Padding(
+                                    padding: EdgeInsets.only(
+                                  left: 20,
+                                )),
+                                Text(
+                                  '(1273 reviews)',
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(154, 153, 152, 1),
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Padding(
+                                    padding: EdgeInsets.only(
+                                  left: 20,
+                                )),
+                                Text(
+                                  '272.00',
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(170, 20, 240, 1),
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700),
+                                ),
                               ],
                             )
                           ],

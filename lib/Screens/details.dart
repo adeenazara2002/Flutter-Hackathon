@@ -102,9 +102,9 @@ class _DetailsState extends State<Details> {
                         Text(
                           '345.00',
                           style: TextStyle(
-                            color: Color.fromRGBO(170, 20, 240, 1),
-                            fontWeight: FontWeight.w600,
-                            fontSize: 24),
+                              color: Color.fromRGBO(170, 20, 240, 1),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 24),
                         ),
                       ],
                     ),
@@ -180,8 +180,8 @@ class _DetailsState extends State<Details> {
                         ),
                         Padding(padding: EdgeInsets.only(left: 15)),
                         CircleAvatar(
-                          backgroundColor: Color.fromRGBO(154, 153, 152, 1),
-                          radius: 30),
+                            backgroundColor: Color.fromRGBO(154, 153, 152, 1),
+                            radius: 30),
                       ],
                     ),
                   ],
@@ -252,9 +252,9 @@ class _DetailsState extends State<Details> {
                         Text(
                           'Macenus corpus magna vitae convallis congue',
                           style: TextStyle(
-                            color: Color.fromRGBO(54, 52, 49, 1),
-                            fontWeight: FontWeight.w500,
-                            fontSize: 16),
+                              color: Color.fromRGBO(54, 52, 49, 1),
+                              fontWeight: FontWeight.w500,
+                              fontSize: 16),
                         ),
                       ],
                     ),
@@ -270,7 +270,8 @@ class _DetailsState extends State<Details> {
                           onPressed: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => const Cart()),
+                              MaterialPageRoute(
+                                  builder: (context) => const Cart()),
                             );
                           },
                           style: ElevatedButton.styleFrom(
@@ -282,13 +283,13 @@ class _DetailsState extends State<Details> {
                           ),
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
-                              horizontal: 110.0, vertical: 15.0),
+                                horizontal: 110.0, vertical: 15.0),
                             child: Text(
                               'Add to cart',
                               style: TextStyle(
-                                fontSize: 15.0,
-                                fontFamily: 'Poppins-Regular',
-                                fontWeight: FontWeight.w800),
+                                  fontSize: 15.0,
+                                  fontFamily: 'Poppins-Regular',
+                                  fontWeight: FontWeight.w800),
                             ),
                           ),
                         ),
@@ -302,10 +303,8 @@ class _DetailsState extends State<Details> {
                 BottomNavigationBar(
                   items: const <BottomNavigationBarItem>[
                     BottomNavigationBarItem(
-                      icon: Icon(
-                        Icons.home,
-                        color: Color.fromRGBO(170, 20, 240, 1),
-                        size: 30),
+                      icon: Icon(Icons.home,
+                          color: Color.fromRGBO(170, 20, 240, 1), size: 30),
                       label: '',
                     ),
                     BottomNavigationBarItem(

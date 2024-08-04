@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hackathon/Screens/Category.dart';
 
-
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -159,7 +158,7 @@ class _HomeState extends State<Home> {
                     //       color: Color.fromRGBO(54, 52, 49, 1)),
                     // ),
 
-                     GestureDetector(
+                    GestureDetector(
                       onTap: () {
                         Navigator.push(
                           context,

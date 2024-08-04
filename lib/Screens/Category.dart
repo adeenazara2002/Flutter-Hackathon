@@ -164,582 +164,623 @@ class _CategoryState extends State<Category> {
             ),
 
             // Main container
-            SizedBox(height: 30,),
-            // container 1
-            Column(
-              children: [
-                Row(
-                  children: [
-                    Padding(padding: EdgeInsets.only(left: 15)),
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-
-                    // 2
-                    Padding(padding: EdgeInsets.only(left: 10)),
-
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-
-                    // 3
-                    Padding(padding: EdgeInsets.only(left: 10)),
-
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  ]
-                )
-              ]
+            SizedBox(
+              height: 30,
             ),
+            // container 1
+            Column(children: [
+              Row(children: [
+                Padding(padding: EdgeInsets.only(left: 15)),
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+
+                // 2
+                Padding(padding: EdgeInsets.only(left: 10)),
+
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+
+                // 3
+                Padding(padding: EdgeInsets.only(left: 10)),
+
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ])
+            ]),
 
             // main row 2
 
-            SizedBox(height: 10,),
-            // container 1
-            Column(
-              children: [
-                Row(
-                  children: [
-                    Padding(padding: EdgeInsets.only(left: 15)),
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-
-                    // 2
-                    Padding(padding: EdgeInsets.only(left: 10)),
-
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-
-                    // 3
-                    Padding(padding: EdgeInsets.only(left: 10)),
-
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  ]
-                )
-              ]
+            SizedBox(
+              height: 10,
             ),
+            // container 1
+            Column(children: [
+              Row(children: [
+                Padding(padding: EdgeInsets.only(left: 15)),
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+
+                // 2
+                Padding(padding: EdgeInsets.only(left: 10)),
+
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+
+                // 3
+                Padding(padding: EdgeInsets.only(left: 10)),
+
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ])
+            ]),
 
             // main row 3
 
-            SizedBox(height: 10,),
-            // container 1
-            Column(
-              children: [
-                Row(
-                  children: [
-                    Padding(padding: EdgeInsets.only(left: 15)),
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-
-                    // 2
-                    Padding(padding: EdgeInsets.only(left: 10)),
-
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-
-                    // 3
-                    Padding(padding: EdgeInsets.only(left: 10)),
-
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  ]
-                )
-              ]
+            SizedBox(
+              height: 10,
             ),
+            // container 1
+            Column(children: [
+              Row(children: [
+                Padding(padding: EdgeInsets.only(left: 15)),
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+
+                // 2
+                Padding(padding: EdgeInsets.only(left: 10)),
+
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+
+                // 3
+                Padding(padding: EdgeInsets.only(left: 10)),
+
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ])
+            ]),
 
             // row 4
 
-            SizedBox(height: 10,),
-            // container 1
-            Column(
-              children: [
-                Row(
-                  children: [
-                    Padding(padding: EdgeInsets.only(left: 15)),
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-
-                    // 2
-                    Padding(padding: EdgeInsets.only(left: 10)),
-
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-
-                    // 3
-                    Padding(padding: EdgeInsets.only(left: 10)),
-
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                      ),
-
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 15 , top: 15)),
-                          // grey container
-                          Container(
-                            height: 45,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(242, 242, 242, 1),
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(
-                                color: Color.fromRGBO(242, 242, 242, 1),
-                              ),
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Color.fromRGBO(154, 153, 152, 1),
-                              size: 30,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 50 , top: 40)),
-                              Text('Bag', style: TextStyle(color: Color.fromRGBO(54, 52, 49, 1),
-                              fontSize: 12, fontWeight: FontWeight.w600),),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  ]
-                )
-              ]
+            SizedBox(
+              height: 10,
             ),
+            // container 1
+            Column(children: [
+              Row(children: [
+                Padding(padding: EdgeInsets.only(left: 15)),
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+
+                // 2
+                Padding(padding: EdgeInsets.only(left: 10)),
+
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+
+                // 3
+                Padding(padding: EdgeInsets.only(left: 10)),
+
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(padding: EdgeInsets.only(left: 15, top: 15)),
+                      // grey container
+                      Container(
+                        height: 45,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(242, 242, 242, 1),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(242, 242, 242, 1),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Color.fromRGBO(154, 153, 152, 1),
+                          size: 30,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(padding: EdgeInsets.only(left: 50, top: 40)),
+                          Text(
+                            'Bag',
+                            style: TextStyle(
+                                color: Color.fromRGBO(54, 52, 49, 1),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ])
+            ]),
           ]),
         )),
       ),
