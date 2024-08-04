@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+class Login extends StatefulWidget {
+  const Login({super.key});
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<Login> createState() => _LoginState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,88 +39,18 @@ class _SplashScreenState extends State<SplashScreen> {
                           ),
                           Column(
                             children: [
-                              Row(
-                                children: [
-                                  Column(
-                                    children: [
-                                      // Padding(padding: EdgeInsets.only(left: 27)),
-                                      SizedBox(
-                                        width: 20,
-                                      ),
-
-                                      SizedBox(height: 200),
-                                      // Padding(padding: EdgeInsets.only(left: 27)),
-                                      Image.asset('assets/images/logo.png'),
-                                      SizedBox(height: 20),
-                                      Text(
-                                        'Full Name',
-                                        style: TextStyle(
-                                          color: Color.fromRGBO(0, 0, 0, 1),
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
+                              SizedBox(
+                                height: 200,
                               ),
-                              Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Padding(
-                                          padding: EdgeInsets.only(
-                                              left: 27, top: 30)),
 
-                                      // container 1
-                                      SizedBox(
-                                        height: 40,
-                                      ),
-
-                                      Container(
-                                        height: 60,
-                                        width: 350,
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(12),
-                                          border: Border.all(
-                                            color: Color.fromRGBO(
-                                                217, 217, 217, 0.96),
-                                          ),
-                                        ),
-                                        child: TextField(
-                                          decoration: InputDecoration(
-                                            hintText: 'Enter your Name',
-                                            hintStyle: TextStyle(
-                                                color:
-                                                    Color.fromRGBO(0, 0, 0, 1),
-                                                fontFamily: 'Poppins-Regular',
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.w400),
-                                            border: InputBorder.none,
-                                            contentPadding:
-                                                EdgeInsets.symmetric(
-                                              vertical: 20.0,
-                                              horizontal: 10.0,
-                                            ),
-                                          ),
-                                          style: TextStyle(
-                                            color: Color.fromRGBO(
-                                                143, 143, 158, 1),
-                                          ),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ],
-                              ),
+                              Image.asset('assets/images/logo.png'),
 
                               // full name ended
 
                               // email column start
                               // email text column
                               SizedBox(
-                                height: 10,
+                                height: 100,
                               ),
                               Column(
                                 children: [
@@ -129,7 +59,7 @@ class _SplashScreenState extends State<SplashScreen> {
                                       Padding(
                                           padding: EdgeInsets.only(left: 30)),
                                       Text(
-                                        'Full Name',
+                                        'Email',
                                         style: TextStyle(
                                           color: Color.fromRGBO(0, 0, 0, 1),
                                           fontSize: 14,
@@ -306,10 +236,10 @@ class _SplashScreenState extends State<SplashScreen> {
                                         ),
                                         child: Padding(
                                           padding: const EdgeInsets.symmetric(
-                                              horizontal: 100.0,
+                                              horizontal: 130.0,
                                               vertical: 20.0),
                                           child: Text(
-                                            'Create Account',
+                                            'Sign In',
                                             style: TextStyle(
                                                 fontSize: 15.0,
                                                 fontFamily: 'Poppins-Regular',
@@ -322,41 +252,6 @@ class _SplashScreenState extends State<SplashScreen> {
                                 ],
                               ),
                               // button column ended
-                              SizedBox(
-                                height: 20,
-                              ),
-                              Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Padding(
-                                          padding: EdgeInsets.only(left: 100)),
-                                      Text(
-                                        'Already have an account?',
-                                        style: TextStyle(
-                                          color: Color.fromRGBO(0, 0, 0, 1),
-                                          fontFamily: 'Poppins-Regular',
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                      ),
-
-                                      // another text
-                                      Padding(
-                                          padding: EdgeInsets.only(left: 5)),
-                                      Text(
-                                        'Sign In',
-                                        style: TextStyle(
-                                          color: Color.fromRGBO(0, 0, 0, 1),
-                                          fontFamily: 'Poppins-Regular',
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
                             ],
                           ),
                         ],

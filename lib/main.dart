@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackathon/Screens/login.dart';
 import 'package:hackathon/Screens/registration.dart';
 
 void main(){
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: Login(),
     );
   }
 }
